@@ -2,8 +2,6 @@
 
 # Vite + React + Zustand State Management Technigo Boilerplate
 
-Welcome to the `technigo-zustand-boiler-plate`!
-
 Welcome to the React Zustand Boilerplate! This repository provides a foundational setup for integrating Zustand with React, allowing you to manage state in a more straightforward and efficient manner.
 
 ## Demo
