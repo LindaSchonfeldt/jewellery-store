@@ -1,9 +1,11 @@
 import Home from './pages/Home.jsx'
 
-export const App = () => {
+const App = () => {
   return (
     <>
       <Home />
     </>
   )
 }
+
+export default App
