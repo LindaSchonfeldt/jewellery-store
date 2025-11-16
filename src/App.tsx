@@ -1,6 +1,6 @@
-import Home from './pages/Home.jsx'
+import Home from './pages/Home'
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <>
       <Home />
