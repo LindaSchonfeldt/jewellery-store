@@ -1,4 +1,5 @@
 import { createSystem, defaultConfig, defineConfig } from '@chakra-ui/react'
+import { buttonRecipe } from './recipes/button.recipe'
 
 const customConfig = defineConfig({
   globalCss: {
@@ -32,6 +33,9 @@ const customConfig = defineConfig({
           900: { value: '#001f1f' }
         }
       }
+    },
+    recipes: {
+      button: buttonRecipe
     }
   }
 })

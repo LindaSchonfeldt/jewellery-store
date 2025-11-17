@@ -1,4 +1,4 @@
-import { Box, Flex, Heading } from '@chakra-ui/react'
+import { Box, Button, Flex, Heading, Text, VStack } from '@chakra-ui/react'
 
 import { useHorizontalScroll } from '../hooks/useHorizontalScroll'
 
@@ -26,11 +26,17 @@ const Home = () => {
             </Flex>
           </Box>
           <Box width='100vw' height='100vh' bg='gray.900' p={0} m={0}>
-            Item 2
+            <VStack justify='center' height='100%'>
+              <Box maxW='md' m={4} p={4} bg='white'>
+                <Heading size='md' mb={2}>
+                  Card Title
+                </Heading>
+                <Text mb={4}>This is the card content.</Text>
+                <Button>Action</Button>
+              </Box>
+            </VStack>
           </Box>
-          <Box width='100vw' height='100vh' bg='gray.300' p={0} m={0}>
-            Item 3
-          </Box>
+          <Box width='100vw' height='100vh' bg='gray.300' p={0} m={0}></Box>
         </Flex>
       </Box>
       <Box width='100%' minHeight='100vh' p={0} m={0}>
