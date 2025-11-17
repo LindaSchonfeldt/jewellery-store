@@ -33,15 +33,13 @@ export const useScrollBasedColor = (options?: UseScrollBasedColorOptions) => {
     scrollContainerId = 'horizontal-scroll-container'
   } = options || {}
 
-  const [textColor, setTextColor] = useState(lightColor)
+  const [textColor, setTextColor] = useState<string | null>(null)
 
   useEffect(() => {
     const scrollContainer = document.getElementById(scrollContainerId)
     if (!scrollContainer) return
 
     const handleScroll = () => {
-      const scrollPosition = scrollContainer.scrollLeft
-
       // Get the element at the center of the viewport
       const centerX = window.innerWidth / 2
       const element = document.elementFromPoint(centerX, 100) // 100px from top (nav area)
@@ -59,12 +57,19 @@ export const useScrollBasedColor = (options?: UseScrollBasedColorOptions) => {
       }
     }
 
-    // Set initial color
+    // Set initial color immediately
     handleScroll()
 
     scrollContainer.addEventListener('scroll', handleScroll)
-    return () => scrollContainer.removeEventListener('scroll', handleScroll)
+
+    // Also run on window resize to recalculate
+    window.addEventListener('resize', handleScroll)
+
+    return () => {
+      scrollContainer.removeEventListener('scroll', handleScroll)
+      window.removeEventListener('resize', handleScroll)
+    }
   }, [lightColor, darkColor, scrollContainerId])
 
-  return textColor
+  return textColor || lightColor
 }

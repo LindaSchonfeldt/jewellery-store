@@ -1,4 +1,5 @@
 import { Box, Flex, Heading } from '@chakra-ui/react'
+
 import { useHorizontalScroll } from '../hooks/useHorizontalScroll'
 
 const Home = () => {
@@ -33,10 +34,10 @@ const Home = () => {
         </Flex>
       </Box>
       <Box width='100%' minHeight='100vh' p={0} m={0}>
-        <Box width='100%' height='100vh' bg='blue.100'>
+        <Box width='100%' height='100vh' bg='gray.100'>
           Vertical section 1
         </Box>
-        <Box width='100%' height='100vh' bg='blue.200'>
+        <Box width='100%' height='100vh' bg='gray.200'>
           Vertical section 2
         </Box>
       </Box>
