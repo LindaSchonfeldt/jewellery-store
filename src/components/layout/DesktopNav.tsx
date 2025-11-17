@@ -4,7 +4,7 @@ import { PiDiamondsFourLight } from 'react-icons/pi'
 import { useScrollBasedColor } from '../../hooks/useScrollBasedColor'
 
 const DesktopNav = () => {
-  const textColor = useScrollBasedColor({
+  const { textColor, hoverBg } = useScrollBasedColor({
     lightColor: 'black',
     darkColor: 'white'
   })
@@ -36,13 +36,23 @@ const DesktopNav = () => {
       </Flex>
       <Spacer />
       <Box fontFamily='heading'>
-        <Button variant='ghost' mr={2} color={textColor}>
+        <Button
+          variant='ghost'
+          mr={2}
+          color={textColor}
+          _hover={{ bg: hoverBg }}
+        >
           Shop
         </Button>
-        <Button variant='ghost' color={textColor}>
+        <Button
+          variant='ghost'
+          mr={2}
+          color={textColor}
+          _hover={{ bg: hoverBg }}
+        >
           About
         </Button>
-        <Button variant='ghost' color={textColor}>
+        <Button variant='ghost' color={textColor} _hover={{ bg: hoverBg }}>
           Contact
         </Button>
       </Box>

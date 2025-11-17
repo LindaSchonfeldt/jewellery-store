@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react'
 interface UseScrollBasedColorOptions {
   lightColor?: string
   darkColor?: string
+  hoverLightBg?: string
+  hoverDarkBg?: string
   scrollContainerId?: string
 }
 
@@ -30,10 +32,13 @@ export const useScrollBasedColor = (options?: UseScrollBasedColorOptions) => {
   const {
     lightColor = 'black',
     darkColor = 'white',
+    hoverLightBg = '#f0f0f0',
+    hoverDarkBg = '#222',
     scrollContainerId = 'horizontal-scroll-container'
   } = options || {}
 
   const [textColor, setTextColor] = useState<string | null>(null)
+  const [hoverBg, setHoverBg] = useState<string | null>(null)
 
   useEffect(() => {
     const scrollContainer = document.getElementById(scrollContainerId)
@@ -52,8 +57,10 @@ export const useScrollBasedColor = (options?: UseScrollBasedColorOptions) => {
       // Determine if background is dark or light
       if (isColorDark(bgColor)) {
         setTextColor(darkColor)
+        setHoverBg(hoverDarkBg)
       } else {
         setTextColor(lightColor)
+        setHoverBg(hoverLightBg)
       }
     }
 
@@ -69,7 +76,10 @@ export const useScrollBasedColor = (options?: UseScrollBasedColorOptions) => {
       scrollContainer.removeEventListener('scroll', handleScroll)
       window.removeEventListener('resize', handleScroll)
     }
-  }, [lightColor, darkColor, scrollContainerId])
+  }, [lightColor, darkColor, hoverLightBg, hoverDarkBg, scrollContainerId])
 
-  return textColor || lightColor
+  return {
+    textColor: textColor || lightColor,
+    hoverBg: hoverBg || hoverLightBg
+  }
 }
