@@ -1,5 +1,6 @@
+import { Box, Flex, Heading } from '@chakra-ui/react'
+import { h1 } from 'framer-motion/client'
 import { useEffect, useRef } from 'react'
-import { Box, Flex } from '@chakra-ui/react'
 
 const Home = () => {
   const scrollRef = useRef<HTMLDivElement>(null)
@@ -48,13 +49,17 @@ const Home = () => {
       m={0}
     >
       <Flex direction='row' width='max-content' height='100vh' p={0} m={0}>
-        <Box width='100vw' height='100vh' bg='teal.100' p={0} m={0}>
-          Item 1
+        <Box width='100vw' height='100vh' bg='gray.50' p={0} m={0}>
+          <Flex height='100%' align='center' justify='center'>
+            <Heading as='h1' fontSize={42}>
+              Welcome to us
+            </Heading>
+          </Flex>
         </Box>
-        <Box width='100vw' height='100vh' bg='teal.200' p={0} m={0}>
+        <Box width='100vw' height='100vh' bg='gray.900' p={0} m={0}>
           Item 2
         </Box>
-        <Box width='100vw' height='100vh' bg='teal.300' p={0} m={0}>
+        <Box width='100vw' height='100vh' bg='gray.300' p={0} m={0}>
           Item 3
         </Box>
         {/* Add more items as needed */}

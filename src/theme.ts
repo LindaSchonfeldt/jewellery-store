@@ -12,7 +12,7 @@ const customConfig = defineConfig({
     tokens: {
       fonts: {
         heading: {
-          value: 'Inter, system-ui, Avenir, Helvetica, Arial, sans-serif'
+          value: 'Turret Road, Arial, sans-serif'
         },
         body: {
           value: 'Inter, system-ui, Avenir, Helvetica, Arial, sans-serif'

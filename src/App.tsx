@@ -1,7 +1,8 @@
 import { useBreakpointValue } from '@chakra-ui/react'
+
+import DesktopNav from './components/layout/DesktopNav'
+import MobileNav from './components/layout/MobileNav'
 import Home from './pages/Home'
-import MobileNav from './components/MobileNav'
-import DesktopNav from './components/DesktopNav'
 
 const App: React.FC = () => {
   const isDesktop = useBreakpointValue({ base: false, lg: true })
