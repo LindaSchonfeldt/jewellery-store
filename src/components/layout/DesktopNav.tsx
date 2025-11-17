@@ -6,8 +6,7 @@ import { useScrollBasedColor } from '../../hooks/useScrollBasedColor'
 const DesktopNav = () => {
   const textColor = useScrollBasedColor({
     lightColor: 'black',
-    darkColor: 'white',
-    threshold: 0.5
+    darkColor: 'white'
   })
 
   return (
