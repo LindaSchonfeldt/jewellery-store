@@ -1,6 +1,6 @@
-import { Box, Button, Flex, Heading, Text, VStack } from '@chakra-ui/react'
-import { base } from 'framer-motion/client'
+import { Box, Flex, Heading, HStack, Text, VStack } from '@chakra-ui/react'
 
+import CustomButton from '../components/ui/CustomButton'
 import { useHorizontalScroll } from '../hooks/useHorizontalScroll'
 
 const Home = () => {
@@ -20,23 +20,41 @@ const Home = () => {
       >
         <Flex direction='row' width='max-content' height='100vh' p={0} m={0}>
           <Box width='100vw' height='100vh' bg='gray.50' p={0} m={0}>
-            <Flex height='100%' align='center' justify='center'>
+            <VStack height='100%' align='center' justify='center' gap={4}>
               <Heading as='h1' fontSize={42}>
-                Welcome to us
+                This is the new normal
               </Heading>
-              <Button variant='primary'>Primary Button</Button>
-            </Flex>
+              <Text>
+                Discover unique jewellery pieces crafted with passion and
+                precision. Elevate your style with us.
+              </Text>
+              <CustomButton variant='primary'>Get Started</CustomButton>
+            </VStack>
           </Box>
           <Box width='100vw' height='100vh' bg='gray.900' p={0} m={0}>
-            <VStack justify='center' height='100%'>
-              <Box maxW='md' m={4} p={4} bg='white'>
-                <Heading size='md' mb={2}>
+            <HStack justify='center' height='100%' gap={8}>
+              <Box maxW='md' p={4} bg='whiteAlpha.900'>
+                <Heading as='h3' mb={2}>
                   Card Title
                 </Heading>
                 <Text mb={4}>This is the card content.</Text>
-                <Button>Action</Button>
+                <CustomButton variant='secondary'>Action</CustomButton>
               </Box>
-            </VStack>
+              <Box maxW='md' p={4} bg='whiteAlpha.900'>
+                <Heading as='h3' mb={2}>
+                  Card Title
+                </Heading>
+                <Text mb={4}>This is the card content.</Text>
+                <CustomButton variant='secondary'>Action</CustomButton>
+              </Box>
+              <Box maxW='md' p={4} bg='whiteAlpha.900'>
+                <Heading as='h3' mb={2}>
+                  Card Title
+                </Heading>
+                <Text mb={4}>This is the card content.</Text>
+                <CustomButton variant='secondary'>Action</CustomButton>
+              </Box>
+            </HStack>
           </Box>
           <Box width='100vw' height='100vh' bg='gray.300' p={0} m={0}></Box>
         </Flex>
