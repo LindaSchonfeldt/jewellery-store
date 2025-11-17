@@ -27,6 +27,7 @@ const Home = () => {
         p={0}
         m={0}
       >
+        {/* First section */}
         <Flex direction='row' width='max-content' height='100vh' p={0} m={0}>
           <Box width='100vw' height='100vh' bg='gray.50' p={0} m={0}>
             <VStack
@@ -52,6 +53,8 @@ const Home = () => {
               <CustomButton variant='primary'>Discover more</CustomButton>
             </VStack>
           </Box>
+
+          {/* Second section */}
           <Box width='100vw' height='100vh' bg='gray.900' p={0} m={0}>
             <VStack height='100%' justify='center' align='center'>
               <Heading as='h2' color='white' pb={4} textAlign='center'>
@@ -60,14 +63,14 @@ const Home = () => {
               <HStack justify='center' gap={8}>
                 <Box maxW='md' w='350px' p={4} bg='whiteAlpha.900'>
                   <Heading as='h3' mb={2}>
-                    Card Title
+                    Rings
                   </Heading>
                   <Text mb={4}>This is the card content.</Text>
                   <CustomButton variant='secondary'>Action</CustomButton>
                 </Box>
                 <Box maxW='sm' w='220px' p={4} bg='whiteAlpha.900'>
                   <Heading as='h3' mb={2}>
-                    Card Title
+                    Necklaces
                   </Heading>
                   <Text mb={4}>This is the card content.</Text>
                   <CustomButton variant='secondary'>Action</CustomButton>
@@ -75,9 +78,11 @@ const Home = () => {
               </HStack>
             </VStack>
           </Box>
+          {/* Third section */}
           <Box width='100vw' height='100vh' bg='gray.300' p={0} m={0}></Box>
         </Flex>
       </Box>
+      {/* Vertical sections */}
       <Box width='100%' minHeight='100vh' p={0} m={0}>
         <Box width='100%' height='100vh' bg='gray.100'>
           Vertical section 1
