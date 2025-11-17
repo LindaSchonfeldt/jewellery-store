@@ -1,5 +1,14 @@
-import { Box, Flex, Heading, HStack, Text, VStack } from '@chakra-ui/react'
+import {
+  Box,
+  Flex,
+  Heading,
+  HStack,
+  Image,
+  Text,
+  VStack
+} from '@chakra-ui/react'
 
+import home1 from '../assets/home1.jpg'
 import CustomButton from '../components/ui/CustomButton'
 import { useHorizontalScroll } from '../hooks/useHorizontalScroll'
 
@@ -20,15 +29,27 @@ const Home = () => {
       >
         <Flex direction='row' width='max-content' height='100vh' p={0} m={0}>
           <Box width='100vw' height='100vh' bg='gray.50' p={0} m={0}>
-            <VStack height='100%' align='center' justify='center' gap={4}>
+            <VStack
+              as='section'
+              height='100%'
+              align='center'
+              justify='center'
+              gap={4}
+            >
+              <Image
+                src={home1}
+                alt='Jewellery'
+                width='medium'
+                height='medium'
+              />
               <Heading as='h1' fontSize={42}>
-                This is the new normal
+                The future of fine jewellery
               </Heading>
               <Text>
-                Discover unique jewellery pieces crafted with passion and
-                precision. Elevate your style with us.
+                Responsibly created diamonds with uncompromising beauty.
+                Minimal. Conscious. Exquisite.
               </Text>
-              <CustomButton variant='primary'>Get Started</CustomButton>
+              <CustomButton variant='primary'>Discover more</CustomButton>
             </VStack>
           </Box>
           <Box width='100vw' height='100vh' bg='gray.900' p={0} m={0}>
