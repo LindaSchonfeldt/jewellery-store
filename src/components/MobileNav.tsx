@@ -15,11 +15,11 @@ const MobileNav = () => {
       zIndex={1000}
     >
       <Flex
+        direction='row'
+        alignItems='center'
         fontWeight='medium'
         color='black'
         fontSize='18px'
-        direction='row'
-        alignItems='center'
       >
         <IoDiamond />
         [...jewels]
