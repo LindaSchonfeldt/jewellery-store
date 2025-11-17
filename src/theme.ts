@@ -1,4 +1,5 @@
 import { createSystem, defaultConfig, defineConfig } from '@chakra-ui/react'
+
 import { buttonRecipe } from './recipes/button.recipe'
 
 const customConfig = defineConfig({
@@ -40,6 +41,6 @@ const customConfig = defineConfig({
   }
 })
 
-const system = createSystem(defaultConfig, customConfig)
+const system = createSystem(customConfig, defaultConfig)
 
 export default system

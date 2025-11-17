@@ -1,16 +1,6 @@
 import { defineRecipe } from '@chakra-ui/react'
 
 export const buttonRecipe = defineRecipe({
-  className: 'button',
-  base: {
-    display: 'inline-flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    fontWeight: 'semibold',
-    borderRadius: 'md',
-    cursor: 'pointer',
-    transition: 'all 0.2s'
-  },
   variants: {
     variant: {
       primary: {
@@ -25,34 +15,18 @@ export const buttonRecipe = defineRecipe({
         _hover: { bg: 'gray.300' },
         _active: { bg: 'gray.400' }
       },
+      ghost: {
+        bg: 'transparent',
+        color: 'inherit'
+      },
       outline: {
-        borderWidth: '1px',
-        borderColor: 'gray.900',
-        color: 'gray.900',
-        _hover: { bg: 'gray.100' },
-        _active: { bg: 'gray.200' }
-      }
-    },
-    size: {
-      sm: {
-        fontSize: 'sm',
-        px: 3,
-        py: 2
-      },
-      md: {
-        fontSize: 'md',
-        px: 4,
-        py: 2
-      },
-      lg: {
-        fontSize: 'lg',
-        px: 6,
-        py: 3
+        bg: 'transparent',
+        color: 'inherit',
+        border: '2px solid',
+        borderColor: 'currentColor',
+        _hover: { bg: 'rgba(0, 0, 0, 0.05)' },
+        _active: { bg: 'rgba(0, 0, 0, 0.1)' }
       }
     }
-  },
-  defaultVariants: {
-    variant: 'primary',
-    size: 'md'
   }
 })

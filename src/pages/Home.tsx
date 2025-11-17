@@ -1,4 +1,5 @@
 import { Box, Button, Flex, Heading, Text, VStack } from '@chakra-ui/react'
+import { base } from 'framer-motion/client'
 
 import { useHorizontalScroll } from '../hooks/useHorizontalScroll'
 
@@ -23,6 +24,7 @@ const Home = () => {
               <Heading as='h1' fontSize={42}>
                 Welcome to us
               </Heading>
+              <Button variant='primary'>Primary Button</Button>
             </Flex>
           </Box>
           <Box width='100vw' height='100vh' bg='gray.900' p={0} m={0}>
