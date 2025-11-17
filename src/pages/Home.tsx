@@ -1,12 +1,4 @@
-import {
-  Box,
-  Flex,
-  Heading,
-  HStack,
-  Image,
-  Text,
-  VStack
-} from '@chakra-ui/react'
+import { Box, Flex, Heading, HStack, Image, Text, VStack } from '@chakra-ui/react'
 
 import home1 from '../assets/home1.jpg'
 import CustomButton from '../components/ui/CustomButton'
