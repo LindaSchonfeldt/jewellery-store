@@ -37,10 +37,10 @@ const DesktopNav = () => {
       <Spacer />
       <Box fontFamily='heading'>
         <Button variant='ghost' mr={2} color={textColor}>
-          Home
-        </Button>
-        <Button variant='ghost' mr={2} color={textColor}>
           Shop
+        </Button>
+        <Button variant='ghost' color={textColor}>
+          About
         </Button>
         <Button variant='ghost' color={textColor}>
           Contact
