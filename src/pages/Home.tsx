@@ -32,29 +32,27 @@ const Home = () => {
             </VStack>
           </Box>
           <Box width='100vw' height='100vh' bg='gray.900' p={0} m={0}>
-            <HStack justify='center' height='100%' gap={8}>
-              <Box maxW='md' p={4} bg='whiteAlpha.900'>
-                <Heading as='h3' mb={2}>
-                  Card Title
-                </Heading>
-                <Text mb={4}>This is the card content.</Text>
-                <CustomButton variant='secondary'>Action</CustomButton>
-              </Box>
-              <Box maxW='md' p={4} bg='whiteAlpha.900'>
-                <Heading as='h3' mb={2}>
-                  Card Title
-                </Heading>
-                <Text mb={4}>This is the card content.</Text>
-                <CustomButton variant='secondary'>Action</CustomButton>
-              </Box>
-              <Box maxW='md' p={4} bg='whiteAlpha.900'>
-                <Heading as='h3' mb={2}>
-                  Card Title
-                </Heading>
-                <Text mb={4}>This is the card content.</Text>
-                <CustomButton variant='secondary'>Action</CustomButton>
-              </Box>
-            </HStack>
+            <VStack height='100%' justify='center' align='center'>
+              <Heading as='h2' color='white' pb={4} textAlign='center'>
+                Explore Our Exclusive Collections
+              </Heading>
+              <HStack justify='center' gap={8}>
+                <Box maxW='md' w='350px' p={4} bg='whiteAlpha.900'>
+                  <Heading as='h3' mb={2}>
+                    Card Title
+                  </Heading>
+                  <Text mb={4}>This is the card content.</Text>
+                  <CustomButton variant='secondary'>Action</CustomButton>
+                </Box>
+                <Box maxW='sm' w='220px' p={4} bg='whiteAlpha.900'>
+                  <Heading as='h3' mb={2}>
+                    Card Title
+                  </Heading>
+                  <Text mb={4}>This is the card content.</Text>
+                  <CustomButton variant='secondary'>Action</CustomButton>
+                </Box>
+              </HStack>
+            </VStack>
           </Box>
           <Box width='100vw' height='100vh' bg='gray.300' p={0} m={0}></Box>
         </Flex>
