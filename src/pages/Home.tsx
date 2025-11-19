@@ -50,10 +50,12 @@ const Home = () => {
               <Heading as='h1' fontSize={{ base: '3xl', md: '4xl' }}>
                 The future of fine jewellery
               </Heading>
-              <Text textAlign='center' px={8}>
-                Responsibly created diamonds with uncompromising beauty.
-                Minimal. Conscious. Exquisite.
-              </Text>
+              <VStack textAlign='center' px={8} mb={4}>
+                <Text>
+                  Responsibly created diamonds with uncompromising beauty.
+                </Text>
+                <Text fontWeight='bold'>Minimal. Conscious. Exquisite.</Text>
+              </VStack>
               <CustomButton variant='primary'>Discover more</CustomButton>
             </VStack>
           </Box>
