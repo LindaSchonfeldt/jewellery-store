@@ -77,16 +77,18 @@ const Home = () => {
           {/* Third section */}
           <Box
             as='section'
-            width='150vw'
+            width='100vw'
             height='100vh'
             bg='gray.300'
             p={0}
             m={0}
           >
-            <VStack height='100%' justify='center' align='center'>
-              <Heading as='h2' color='white' pb={4} textAlign='center'>
-                Explore Our Exclusive Collections
-              </Heading>
+            <Flex
+              height='100%'
+              justify='center'
+              align='center'
+              overflowY={{ base: 'auto', md: 'visible' }}
+            >
               <Flex
                 direction={{ base: 'column', md: 'row' }}
                 justify='center'
@@ -95,15 +97,31 @@ const Home = () => {
                 px={8}
               >
                 <Box flex={1} p={4} bg='whiteAlpha.900'>
-                  <Image src={rings} objectFit='cover' />
-                  <Heading as='h3' mb={2}>
+                  <Image
+                    src={rings}
+                    width='100%'
+                    height={{ base: '150px', md: '300px' }}
+                    objectFit='cover'
+                  />
+                  <Heading as='h3' mb={2} fontSize={{ base: 'md', md: 'lg' }}>
                     Rings
                   </Heading>
-                  <Text mb={4}>This is the card content.</Text>
-                  <CustomButton variant='secondary'>Action</CustomButton>
+                  <Text mb={4} fontSize={{ base: 'sm', md: 'md' }}>
+                    This is the card content.
+                  </Text>
+                  <CustomButton
+                    variant='secondary'
+                    size={{ base: 'sm', md: 'md' }}
+                  >
+                    Action
+                  </CustomButton>
                 </Box>
                 <Box flex={1} p={4} bg='whiteAlpha.900'>
-                  <Box position='relative' width='100%' height='300px'>
+                  <Box
+                    position='relative'
+                    width='100%'
+                    height={{ base: '150px', md: '300px' }}
+                  >
                     <Image
                       src={necklaces1}
                       objectFit='cover'
@@ -113,27 +131,21 @@ const Home = () => {
                     />
                   </Box>
 
-                  <Heading as='h3' mb={2}>
+                  <Heading as='h3' mb={2} fontSize={{ base: 'md', md: 'lg' }}>
                     Necklaces
                   </Heading>
-                  <Text mb={4}>This is the card content.</Text>
-                  <CustomButton variant='secondary'>Action</CustomButton>
-                </Box>
-                <Box flex={1} p={4} bg='whiteAlpha.900'>
-                  <Image
-                    src={earrings1}
-                    objectFit='cover'
-                    width='100%'
-                    height='300px'
-                  />
-                  <Heading as='h3' mb={2}>
-                    Earrings
-                  </Heading>
-                  <Text mb={4}>This is the card content.</Text>
-                  <CustomButton variant='secondary'>Action</CustomButton>
+                  <Text mb={4} fontSize={{ base: 'sm', md: 'md' }}>
+                    This is the card content.
+                  </Text>
+                  <CustomButton
+                    variant='secondary'
+                    size={{ base: 'sm', md: 'md' }}
+                  >
+                    Action
+                  </CustomButton>
                 </Box>
               </Flex>
-            </VStack>
+            </Flex>
           </Box>
         </Flex>
       </Box>
