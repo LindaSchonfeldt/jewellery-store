@@ -54,7 +54,9 @@ const Home = () => {
                 <Text>
                   Responsibly created diamonds with uncompromising beauty.
                 </Text>
-                <Text fontWeight='bold'>Minimal. Conscious. Exquisite.</Text>
+                <Text fontFamily='heading' fontWeight='bold'>
+                  Minimal. Conscious. Exquisite.
+                </Text>
               </VStack>
               <CustomButton variant='primary'>Discover more</CustomButton>
             </VStack>
