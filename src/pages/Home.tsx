@@ -147,18 +147,82 @@ const Home = () => {
               </Flex>
             </Flex>
           </Box>
+
+          {/* Fourth section */}
+          <Box
+            as='section'
+            width='100vw'
+            height='100vh'
+            bg='gray.300'
+            p={0}
+            m={0}
+          >
+            <Flex
+              height='100%'
+              justify='center'
+              align='center'
+              overflowY={{ base: 'auto', md: 'visible' }}
+            >
+              <Flex
+                direction={{ base: 'column', md: 'row' }}
+                justify='center'
+                gap={4}
+                width='100%'
+                px={8}
+              >
+                <Box flex={1} p={4} bg='whiteAlpha.900'>
+                  <Image
+                    src={rings}
+                    width='100%'
+                    height={{ base: '150px', md: '300px' }}
+                    objectFit='cover'
+                  />
+                  <Heading as='h3' mb={2} fontSize={{ base: 'md', md: 'xl' }}>
+                    Rings
+                  </Heading>
+                  <Text mb={4} fontSize={{ base: 'sm', md: 'md' }}>
+                    This is the card content.
+                  </Text>
+                  <CustomButton
+                    variant='secondary'
+                    size={{ base: 'sm', md: 'md' }}
+                  >
+                    Action
+                  </CustomButton>
+                </Box>
+                <Box flex={1} p={4} bg='whiteAlpha.900'>
+                  <Box
+                    position='relative'
+                    width='100%'
+                    height={{ base: '150px', md: '300px' }}
+                  >
+                    <Image
+                      src={necklaces1}
+                      objectFit='cover'
+                      width='100%'
+                      height='100%'
+                      objectPosition='30% 95%'
+                    />
+                  </Box>
+
+                  <Heading as='h3' mb={2} fontSize={{ base: 'md', md: 'lg' }}>
+                    Necklaces
+                  </Heading>
+                  <Text mb={4} fontSize={{ base: 'sm', md: 'md' }}>
+                    This is the card content.
+                  </Text>
+                  <CustomButton
+                    variant='secondary'
+                    size={{ base: 'sm', md: 'md' }}
+                  >
+                    Action
+                  </CustomButton>
+                </Box>
+              </Flex>
+            </Flex>
+          </Box>
         </Flex>
       </Box>
-
-      {/* Vertical sections */}
-      {/*       <Box as='section' width='100%' minHeight='100vh' p={0} m={0}>
-        <Box width='100%' height='100vh' bg='gray.100'>
-          Vertical section 1
-        </Box>
-        <Box width='100%' height='100vh' bg='gray.200'>
-          Vertical section 2
-        </Box>
-      </Box> */}
     </>
   )
 }
