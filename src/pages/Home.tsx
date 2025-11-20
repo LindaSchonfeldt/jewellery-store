@@ -103,7 +103,7 @@ const Home = () => {
                     height={{ base: '150px', md: '300px' }}
                     objectFit='cover'
                   />
-                  <Heading as='h3' mb={2} fontSize={{ base: 'md', md: 'lg' }}>
+                  <Heading as='h3' mb={2} fontSize={{ base: 'md', md: 'xl' }}>
                     Rings
                   </Heading>
                   <Text mb={4} fontSize={{ base: 'sm', md: 'md' }}>
