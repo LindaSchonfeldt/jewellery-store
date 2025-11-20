@@ -1,6 +1,8 @@
 import { Box, Flex, Heading, Image, Text, VStack } from '@chakra-ui/react'
 
-import home1 from '../assets/home1.jpg'
+import earrings1 from '../assets/earrings1.webp'
+import home from '../assets/home.webp'
+import necklaces1 from '../assets/necklaces1.webp'
 import rings from '../assets/rings.jpg'
 import CustomButton from '../components/ui/CustomButton'
 import { useHorizontalScroll } from '../hooks/useHorizontalScroll'
@@ -39,7 +41,7 @@ const Home = () => {
             >
               <Box position='relative' width='100%'>
                 <Image
-                  src={home1}
+                  src={home}
                   alt='Jewellery'
                   width='100%'
                   height={{ base: '100px', md: '200px' }}
@@ -54,7 +56,7 @@ const Home = () => {
                 <Text>
                   Responsibly created diamonds with uncompromising beauty.
                 </Text>
-                <Text fontFamily='heading' fontWeight='bold'>
+                <Text fontFamily='heading' fontWeight='bold' fontSize='lg'>
                   Minimal. Conscious. Exquisite.
                 </Text>
               </VStack>
@@ -68,6 +70,16 @@ const Home = () => {
             width='100vw'
             height='100vh'
             bg='gray.900'
+            p={0}
+            m={0}
+          ></Box>
+
+          {/* Third section */}
+          <Box
+            as='section'
+            width='150vw'
+            height='100vh'
+            bg='gray.300'
             p={0}
             m={0}
           >
@@ -91,8 +103,31 @@ const Home = () => {
                   <CustomButton variant='secondary'>Action</CustomButton>
                 </Box>
                 <Box flex={1} p={4} bg='whiteAlpha.900'>
+                  <Box position='relative' width='100%' height='300px'>
+                    <Image
+                      src={necklaces1}
+                      objectFit='cover'
+                      width='100%'
+                      height='100%'
+                      objectPosition='30% 95%'
+                    />
+                  </Box>
+
                   <Heading as='h3' mb={2}>
                     Necklaces
+                  </Heading>
+                  <Text mb={4}>This is the card content.</Text>
+                  <CustomButton variant='secondary'>Action</CustomButton>
+                </Box>
+                <Box flex={1} p={4} bg='whiteAlpha.900'>
+                  <Image
+                    src={earrings1}
+                    objectFit='cover'
+                    width='100%'
+                    height='300px'
+                  />
+                  <Heading as='h3' mb={2}>
+                    Earrings
                   </Heading>
                   <Text mb={4}>This is the card content.</Text>
                   <CustomButton variant='secondary'>Action</CustomButton>
@@ -100,28 +135,18 @@ const Home = () => {
               </Flex>
             </VStack>
           </Box>
-
-          {/* Third section */}
-          <Box
-            as='section'
-            width='100vw'
-            height='100vh'
-            bg='gray.300'
-            p={0}
-            m={0}
-          ></Box>
         </Flex>
       </Box>
 
       {/* Vertical sections */}
-      <Box as='section' width='100%' minHeight='100vh' p={0} m={0}>
+      {/*       <Box as='section' width='100%' minHeight='100vh' p={0} m={0}>
         <Box width='100%' height='100vh' bg='gray.100'>
           Vertical section 1
         </Box>
         <Box width='100%' height='100vh' bg='gray.200'>
           Vertical section 2
         </Box>
-      </Box>
+      </Box> */}
     </>
   )
 }
