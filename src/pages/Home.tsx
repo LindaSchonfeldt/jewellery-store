@@ -143,7 +143,7 @@ const Home = () => {
                   src={home}
                   alt=''
                   width='100%'
-                  height={{ base: '100px', md: '200px' }}
+                  height={{ base: '150px', md: '250px' }}
                   objectFit='cover'
                   objectPosition='50% 70%'
                 />
