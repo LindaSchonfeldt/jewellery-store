@@ -10,11 +10,11 @@ interface CustomButtonProps extends Omit<ButtonProps, 'variant'> {
 
 const baseStyles: ButtonProps = {
   fontFamily: 'heading',
-  fontSize: '14px',
+  fontSize: '16px',
   fontWeight: 'normal',
   borderRadius: 'none',
   px: 4,
-  py: 2,
+  py: 4,
   transition: 'all 0.2s'
 }
 

@@ -45,12 +45,12 @@ const Home = () => {
                 css={{
                   '@keyframes zoomIn': {
                     '0%': {
-                      transform: 'scale(1.15)',
+                      transform: 'scale(1.15)'
                     },
                     '100%': {
-                      transform: 'scale(1)',
-                    },
-                  },
+                      transform: 'scale(1)'
+                    }
+                  }
                 }}
               >
                 <Image
@@ -60,9 +60,9 @@ const Home = () => {
                   height={{ base: '100px', md: '200px' }}
                   objectFit='cover'
                   objectPosition='50% 70%'
-                  css={{ 
-                    animation: 'zoomIn 1.8s ease-out forwards',
-                    transformOrigin: 'center center'
+                  css={{
+                    animation: 'zoomIn 1.8s ease-out forwards', // Animation duration and easing
+                    transformOrigin: 'center center' // Zoom from center
                   }}
                 />
               </Box>
