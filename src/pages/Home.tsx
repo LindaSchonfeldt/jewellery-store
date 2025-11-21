@@ -48,14 +48,18 @@ const Home = () => {
                   objectPosition='50% 70%'
                 />
               </Box>
-              <Heading as='h1' fontSize={{ base: '3xl', md: '4xl' }}>
+              <Heading as='h1' fontSize={{ base: '2xl', md: '4xl' }}>
                 The future of fine jewellery
               </Heading>
               <VStack textAlign='center' px={8} mb={4}>
-                <Text>
+                <Text fontSize={{ base: 'md', md: 'xl' }}>
                   Responsibly created diamonds with uncompromising beauty.
                 </Text>
-                <Text fontFamily='heading' fontWeight='bold' fontSize='lg'>
+                <Text
+                  fontFamily='heading'
+                  fontWeight='bold'
+                  fontSize={{ base: 'md', md: 'lg' }}
+                >
                   Minimal. Conscious. Exquisite.
                 </Text>
               </VStack>
