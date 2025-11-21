@@ -38,7 +38,21 @@ const Home = () => {
               justify='center'
               gap={4}
             >
-              <Box position='relative' width='100%'>
+              <Box
+                position='relative'
+                width='100%'
+                overflow='hidden'
+                css={{
+                  '@keyframes zoomIn': {
+                    '0%': {
+                      transform: 'scale(1.15)',
+                    },
+                    '100%': {
+                      transform: 'scale(1)',
+                    },
+                  },
+                }}
+              >
                 <Image
                   src={home}
                   alt='Jewellery'
@@ -46,19 +60,30 @@ const Home = () => {
                   height={{ base: '100px', md: '200px' }}
                   objectFit='cover'
                   objectPosition='50% 70%'
+                  css={{ 
+                    animation: 'zoomIn 1.8s ease-out forwards',
+                    transformOrigin: 'center center'
+                  }}
                 />
               </Box>
-              <Heading as='h1' fontSize={{ base: '2xl', md: '4xl' }}>
+              <Heading
+                as='h1'
+                fontSize={{ base: '3xl', md: '4xl' }}
+                whiteSpace='normal'
+                textAlign='center'
+                mb={-1}
+              >
                 The future of fine jewellery
               </Heading>
               <VStack textAlign='center' px={8} mb={4}>
-                <Text fontSize={{ base: 'md', md: 'xl' }}>
+                <Text fontSize={{ base: 'lg', md: 'xl' }} whiteSpace='normal'>
                   Responsibly created diamonds with uncompromising beauty.
                 </Text>
                 <Text
                   fontFamily='heading'
                   fontWeight='bold'
-                  fontSize={{ base: 'md', md: 'lg' }}
+                  fontSize={{ base: 'lg', md: 'xl' }}
+                  whiteSpace='normal'
                 >
                   Minimal. Conscious. Exquisite.
                 </Text>
