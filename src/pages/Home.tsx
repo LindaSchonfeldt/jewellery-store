@@ -1,9 +1,8 @@
 import { Box, Flex, Heading, Image, Text, VStack } from '@chakra-ui/react'
 
-import earrings1 from '../assets/earrings1.webp'
 import home from '../assets/home.webp'
 import necklaces1 from '../assets/necklaces1.webp'
-import rings from '../assets/rings.jpg'
+import rings from '../assets/rings.webp'
 import CustomButton from '../components/ui/CustomButton'
 import { useHorizontalScroll } from '../hooks/useHorizontalScroll'
 
