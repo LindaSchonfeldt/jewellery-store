@@ -22,7 +22,7 @@ const MobileNav = () => {
         fontSize='18px'
       >
         <IoDiamond />
-        [...jewels]
+        [4.jewels]
       </Flex>
       <Box zIndex={1000} p={2} color='black' fontSize='24px'>
         <IoDiamond />

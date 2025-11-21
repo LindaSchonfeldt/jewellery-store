@@ -82,7 +82,7 @@ const Home = () => {
                 <Text
                   fontFamily='heading'
                   fontWeight='bold'
-                  fontSize={{ base: 'lg', md: 'xl' }}
+                  fontSize={{ base: 'xl', md: '2xl' }}
                   whiteSpace='normal'
                 >
                   Minimal. Conscious. Exquisite.
@@ -100,7 +100,52 @@ const Home = () => {
             bg='gray.900'
             p={0}
             m={0}
-          ></Box>
+          >
+            <Flex
+              height='100%'
+              justify='center'
+              align='flex-start'
+              overflowY={{ base: 'auto', md: 'visible' }}
+            >
+              <Box
+                bg='gray.50'
+                p={{ base: 8, md: 16 }}
+                pt={{ base: 12, md: 16 }}
+                maxWidth='600px'
+                width='90%'
+                border-bottom='1px gray.200 solid'
+              >
+                <Heading
+                  as='h2'
+                  mb={4}
+                  textAlign='center'
+                  fontSize={{ base: 'lg', md: '3xl' }}
+                  whiteSpace='normal'
+                >
+                  Our philosophy
+                </Heading>
+                <Text
+                  textAlign='center'
+                  fontSize={{ base: 'md', md: 'lg' }}
+                  whiteSpace='normal'
+                  mb={8}
+                >
+                  4.jewels is committed to creating beautiful, high-quality
+                  jewellery while prioritizing ethical sourcing and
+                  sustainability. We believe in transparency, craftsmanship, and
+                  making a positive impact on both our customers and the planet.
+                </Text>
+                <Image
+                  src={home}
+                  alt=''
+                  width='100%'
+                  height={{ base: '100px', md: '200px' }}
+                  objectFit='cover'
+                  objectPosition='50% 70%'
+                />
+              </Box>
+            </Flex>
+          </Box>
 
           {/* Third section */}
           <Box
@@ -141,7 +186,7 @@ const Home = () => {
                     variant='secondary'
                     size={{ base: 'sm', md: 'md' }}
                   >
-                    Action
+                    View more
                   </CustomButton>
                 </Box>
                 <Box flex={1} p={4} bg='whiteAlpha.900'>
@@ -169,7 +214,7 @@ const Home = () => {
                     variant='secondary'
                     size={{ base: 'sm', md: 'md' }}
                   >
-                    Action
+                    View more
                   </CustomButton>
                 </Box>
               </Flex>
@@ -215,7 +260,7 @@ const Home = () => {
                     variant='secondary'
                     size={{ base: 'sm', md: 'md' }}
                   >
-                    Action
+                    View more
                   </CustomButton>
                 </Box>
                 <Box flex={1} p={4} bg='whiteAlpha.900'>
@@ -243,7 +288,7 @@ const Home = () => {
                     variant='secondary'
                     size={{ base: 'sm', md: 'md' }}
                   >
-                    Action
+                    View more
                   </CustomButton>
                 </Box>
               </Flex>

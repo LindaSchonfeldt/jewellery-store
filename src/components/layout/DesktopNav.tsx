@@ -31,7 +31,7 @@ const DesktopNav = () => {
       >
         <Link href='/'>
           <PiDiamondsFourLight />
-          [...jewels]
+          [4.jewels]
         </Link>
       </Flex>
       <Spacer />
