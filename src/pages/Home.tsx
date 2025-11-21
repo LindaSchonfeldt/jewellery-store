@@ -111,24 +111,28 @@ const Home = () => {
                 bg='gray.50'
                 p={{ base: 8, md: 16 }}
                 pt={{ base: 12, md: 16 }}
-                maxWidth='600px'
+                maxWidth='900px'
                 width='90%'
                 border-bottom='1px gray.200 solid'
+                display='flex'
+                flexDirection='column'
+                alignItems='center'
               >
                 <Heading
                   as='h2'
                   mb={4}
-                  textAlign='center'
                   fontSize={{ base: 'lg', md: '3xl' }}
                   whiteSpace='normal'
+                  textAlign='center'
                 >
                   Our philosophy
                 </Heading>
                 <Text
-                  textAlign='center'
                   fontSize={{ base: 'md', md: 'lg' }}
                   whiteSpace='normal'
+                  maxWidth={600}
                   mb={8}
+                  textAlign='center'
                 >
                   4.jewels is committed to creating beautiful, high-quality
                   jewellery while prioritizing ethical sourcing and
