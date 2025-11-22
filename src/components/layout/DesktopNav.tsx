@@ -27,7 +27,7 @@ const DesktopNav = () => {
         alignItems='center'
         fontWeight='medium'
         color={textColor}
-        fontSize='18px'
+        fontSize='20px'
         fontFamily='heading'
       >
         <Link href='/'>
