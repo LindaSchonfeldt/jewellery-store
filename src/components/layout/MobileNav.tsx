@@ -1,6 +1,6 @@
 import { Box, Flex, Link, Portal, VStack } from '@chakra-ui/react'
 import { useState } from 'react'
-import { IoDiamond } from 'react-icons/io5'
+import { PiDiamondsFourLight } from 'react-icons/pi'
 
 import { mobileNavItems } from '../../data/navItems'
 import HamburgerIcon from '../ui/HamburgerIcon'
@@ -29,10 +29,11 @@ const MobileNav = () => {
           alignItems='center'
           fontWeight='medium'
           color='black'
-          fontSize='18px'
+          fontFamily='heading'
+          fontSize='20px'
         >
           <Link href='/'>
-            <IoDiamond />
+            <PiDiamondsFourLight />
             [4.jewels]
           </Link>
         </Flex>
@@ -81,7 +82,7 @@ const MobileNav = () => {
               overflowY='auto'
               onClick={(e) => e.stopPropagation()}
             >
-              <VStack gap={6} align='stretch' pb={8}>
+              <VStack fontFamily='heading' gap={6} align='stretch' pb={8}>
                 {mobileNavItems.map((item) => (
                   <Link
                     key={item.to}
