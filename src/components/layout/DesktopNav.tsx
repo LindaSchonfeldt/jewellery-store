@@ -1,6 +1,7 @@
 import { Box, Button, Flex, Link, Spacer } from '@chakra-ui/react'
 import { PiDiamondsFourLight } from 'react-icons/pi'
 
+import { desktopNavItems } from '../../data/navItems'
 import { useScrollBasedColor } from '../../hooks/useScrollBasedColor'
 
 const DesktopNav = () => {
@@ -35,26 +36,20 @@ const DesktopNav = () => {
         </Link>
       </Flex>
       <Spacer />
+
       <Box fontFamily='heading'>
-        <Button
-          variant='ghost'
-          mr={2}
-          color={textColor}
-          _hover={{ bg: hoverBg }}
-        >
-          Shop
-        </Button>
-        <Button
-          variant='ghost'
-          mr={2}
-          color={textColor}
-          _hover={{ bg: hoverBg }}
-        >
-          About
-        </Button>
-        <Button variant='ghost' color={textColor} _hover={{ bg: hoverBg }}>
-          Contact
-        </Button>
+        {desktopNavItems.map((item) => (
+          <Link key={item.to} href={item.to}>
+            <Button
+              variant='ghost'
+              mr={2}
+              color={textColor}
+              _hover={{ bg: hoverBg }}
+            >
+              {item.label}
+            </Button>
+          </Link>
+        ))}
       </Box>
     </Flex>
   )

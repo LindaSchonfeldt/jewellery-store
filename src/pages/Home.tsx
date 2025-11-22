@@ -109,7 +109,7 @@ const Home = () => {
             >
               <Box
                 bg='gray.50'
-                p={{ base: 8, md: 16 }}
+                p={{ base: 4, md: 8 }}
                 pt={{ base: 12, md: 16 }}
                 maxWidth='900px'
                 width='90%'
