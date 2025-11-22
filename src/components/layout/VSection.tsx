@@ -5,7 +5,7 @@ interface SectionProps {
   fullBleed?: boolean
 }
 
-const Section = ({ children, fullBleed = false }: SectionProps) => {
+const VSection = ({ children, fullBleed = false }: SectionProps) => {
   return (
     <Box
       as='section'
@@ -23,4 +23,4 @@ const Section = ({ children, fullBleed = false }: SectionProps) => {
   )
 }
 
-export default Section
+export default VSection
